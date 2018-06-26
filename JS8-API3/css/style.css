@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Francois+One|Open+Sans');
+
+body {
+	overflow-x: hidden;
+	font-family: 'Open Sans', sans-serif;
+	background: #A9C5D0	;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 2em;
+    text-align: center;}
+
+.tabs a {
+	text-decoration: none;
+    color: #333;
+    font-size: 2em;	
+	font-family: 'Francois One', sans-serif;	
+}
+
+.tablink:active{
+	border: 1px
+}
+
+.tabContent {
+	display: none;	
+	margin-top: 1em;
+}
+
+.tabContent h2 {
+	text-align: center;	
+}
+
+/*
+	---------------------------- CHUCK NORRIS -----------------------------------
+*/
+#chuckNorris {
+	display: grid;
+    font-size: 2em;
+    text-align: center;
+}
+
+
+/*
+	---------------------------- UNSPLASH -----------------------------------
+*/
+
+#unsplash {
+	max-width: 600px;
+	margin: 5em auto 0 auto;
+}
+
+.unsplashImg {
+	max-width: 100%;
+}
+
+
+
+/*
+	---------------------------- MUSIC GENRES -----------------------------------
+*/
+
+form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form select {
+	margin-top: 1em;
+	font-size: 2em;
+	border-radius: 4px;
+	box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+form input {
+    margin-top: 2em;
+    border: none;
+    font-size: 1.1em;
+    box-shadow: ;
+    width: 70%;
+    padding: 0.6em 0;
+    margin-left: auto;
+    margin-right: auto;
+	border-radius: 6px;
+	box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+form div {
+	display: block;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.musicResults {
+	text-align: center;
+	margin-top: 2em;
+}
+
+
+/*
+	------------------ MEDIA QUERIES --------------------
+*/
+
+@media (min-width: 400px){
+	.tabs {	
+		flex-flow: row wrap;
+	}
+	
+	form select {
+		margin-top: 3em;
+	}
+}
+
+@media (min-width: 500px){
+	
+	#chuckNorris {		
+		font-size: 3em;
+	}
+	
+	form select {
+		margin-top: 3em;
+	}
+	
+}
+
+
+
+

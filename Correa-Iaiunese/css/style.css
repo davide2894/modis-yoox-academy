@@ -1,0 +1,308 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+body {
+    padding: 0;	
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+	font-weight: 400;		
+    color: #666;
+    font-size: 14px;
+}
+
+#wrapper {
+	overflow-x: hidden;
+}
+
+h1,
+h2 {
+	display: none;
+}
+
+/*.hero-img {
+	max-width: 100%;
+}*/
+
+
+/* MAIN */
+/*main {
+	margin: 19px 12px;
+	font-size: 14px;
+}*/
+main{
+	margin: 19px 0px;
+}
+.mlr{
+	margin-left: 12px;
+	margin-right: 12px;
+}
+.news > h2 {
+	display: block;
+	color: #333;
+}
+
+header{
+	margin: 19px 12px;
+
+}
+
+header h1 {
+	margin-top: 19px;
+}
+
+.intro p {
+	line-height: 21px;
+}
+
+.intro span {
+	font-weight: 700;
+}
+
+ul{
+	list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0;
+    margin-top: 19px;
+    margin-bottom: 0px;
+}
+
+ul li{
+	margin-right: 11px;
+}
+
+
+ul li {
+	border:1px solid #333;
+	text-decoration:none; 
+	display:inline-block;
+	background-color: #FFFFFF; background-image: -webkit-gradient(linear, top bottom, from(#FFFFFF), to(#CFCFCF));
+	background-image: -webkit-linear-gradient(top, #FFFFFF, #CFCFCF);
+	background-image: -moz-linear-gradient(top, #FFFFFF, #CFCFCF);
+	background-image: -ms-linear-gradient(top, #FFFFFF, #CFCFCF);
+	background-image: -o-linear-gradient(top, #FFFFFF, #CFCFCF);
+	background-image: linear-gradient(to bottom, #FFFFFF, #CCCCCC);
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#FFFFFF, endColorstr=#CFCFCF); 
+	color: #333;
+	height: 26px;
+    width: 26px;
+    text-align: center;
+    line-height: 24px;
+}
+
+ul li:hover, 
+.active{
+	background-image: linear-gradient(to bottom,#CCCCCC,#FFFFFF);
+}
+a{
+	text-decoration: none;
+	    color: #333;
+
+}
+
+.news{
+	display: flex;
+	flex-direction: column;
+	background-color: #f5f5f5;
+    padding: 0 12px;	
+}
+
+.article-container h3{
+	order:2;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 19px;
+}
+
+.article-container h3,
+form label {
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+form {
+	color: #333;
+}
+
+.news ul{
+	order:1;
+}
+
+.article-container{
+	display: flex;
+	order: 3;
+}
+.article-container h3{
+	order:0;
+}
+article{
+	margin-bottom: 22px;
+    line-height: 21px;	
+}
+
+article:last-of-type{
+	margin-bottom: 18px;
+}
+
+form {
+	margin-bottom: 21px;
+}
+
+form div {
+	display: flex;
+	margin: 0;
+}
+
+form div input {
+	border-collapse: collapse;
+    font-size: 14px;	
+    line-height: 24px;
+    color: #333;
+	text-indent: 5px;
+}
+
+#newsteller {
+    width: 206px;	
+}
+
+/* MAIN */
+footer {
+	margin-left: 12px;
+	margin-right: 12px;
+    text-align:  center;
+    background-color:  #333;
+   
+    padding:  19px 0;
+    margin:  0px;
+    
+    
+}
+
+footer a {
+	text-decoration: none;
+}
+
+footer,
+footer a {
+	color:  #fff;
+	font-weight: 600;
+	font-size: 10px;
+	line-height: 24px;
+}
+
+.mt {
+	margin-top: 19px;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 600px){
+	#wrapper{
+		display: flex;
+	    flex-direction: column;	    
+	}
+	header{
+		order: 1;
+	}
+	.hero{
+		order: 0;
+	}
+	.intro{
+		order: 2;
+	}
+	.news{
+		order: 3;
+		 padding: 0 24px;
+		 display: flex;
+		 flex-wrap: wrap;
+	}
+	form{
+		order: 4;
+		display: flex;
+		justify-content: space-between;
+	}
+	form #input-one {
+		max-width: 560px;
+	}
+	form #input-two {
+		max-width: 90px;
+	}
+	footer{
+		order: 5;
+	}
+	.logo{
+		max-height: 86px;
+		max-width: 325px;
+	}
+	.mlr{
+		margin-left: 24px;
+		margin-right: 24px;
+	}
+
+	.article-container {
+		display: flex;
+	}
+	.article-container div:first-of-type {
+		column-count: 2;
+	}
+
+	.mt {
+		margin-top: 19px;
+	}	
+	#newsteller {
+		
+	}
+}
+
+@media screen and (min-width: 1024px){
+	#wrapper{
+		max-width: 1024px;
+		margin: 0 auto;
+	}
+}
+
+/*Modal*/
+
+
+#modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+	background: #333;
+	opacity: 0.8;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    overflow-y: scroll;
+}
+
+#modalContent {
+	width: 800px;
+    margin: 2em auto;
+    padding: 20px;
+    width: 65%;
+	border-radius: 10px;
+	opacity: 1;
+	background:#FFF;
+	color: #333;
+}
+
+#modalHeader {
+	display: flex;
+    justify-content: space-between;
+	color: #BDA251;
+}
+
+#modalClose {    
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    align-self: center;
+}
+
+#modalClose:hover{
+	cursor: pointer;
+}

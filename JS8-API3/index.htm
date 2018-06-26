@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>API 3 TABS</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div id="wrapper">
+	
+		<div class="tabs" role="navigation">
+			<a href="#" onclick="openTab(event, 'chuckNorris');">
+				<div class="tablink blueBorder">Chuck Jokes</div>
+			</a>
+			<a href="#" onclick="openTab(event, 'unsplash');">
+				<div class="tablink blueBorder">Unsplash</div>
+			</a>
+			<a href="#" onclick="openTab(event, 'musicGenres');">
+				<div class="tablink blueBorder">Music Genres</div>
+			</a>
+		</div>
+				
+		<div id="chuckNorris" class="tabContent">		
+		</div>
+
+		<div id="unsplash" class="tabContent">
+		</div>
+
+		<div id="musicGenres" class="tabContent">
+			<form action="index.htm" method="post" id="music">
+				<select name="musicGenres" multiple id="genres">
+				  <option value="jazz">Jazz</option>
+				  <option value="techno">Techno</option>
+				  <option value="house">House</option>
+				  <option value="rock">Rock</option>
+				  <option value="pop">Pop</option>
+				  <option value="rap">Rap</option>
+				  <option value="punk">Punk</option>
+				  <option value="metal">Metal</option>
+				  <option value="blues">Blues</option>
+				  <option value="classic">Classic</option>
+				  <option value="folk">Folk</option>
+				  <option value="country">Country</option>
+				  <option value="reggae">Reggae</option>
+				  <option value="funk">Funk</option>
+				  <option value="disco">Disco</option>
+				</select>			
+				<input type="submit" value="SUBMIT">
+			</form>
+		</div>
+		
+
+		<script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>YOOX NET-A-PORTER GROUP</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/carousel.css">
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<h1 class="mt">YOOX NET-A-PORTER GROUP</h1>
+				<img class="logo" src="images/logo-ynap.svg" alt="logo ynap">
+			</header>
+
+			<!-- OLD HERO IMAGE 
+			<div class="hero">
+				<h2>Hero Image</h2>
+				<div>					
+				    <picture>
+				    	<source class="hero-img" media="(min-width: 1024px)" srcset="images/man2048.jpg">
+				    	<source class="hero-img" media="(min-width: 720px)" srcset="images/man1024.jpg">
+				    	<source class="hero-img" media="(min-width: 600px)" srcset="images/man768.jpg">
+				        <source class="hero-img" media="(min-width: 321px)" srcset="images/man640.jpg">
+						<img class="hero-img hero-img-sm" src="images/man320.jpg" alt="Man wearing yellow jacket">	
+				    </picture>
+				</div>
+			</div>
+			-->
+
+			<!-- CAROUSEL -->
+			<div class="slideshowContainer">
+					<div class="mySlides">
+						<div class="numberText">1 / 5</div>
+						<picture>
+								<source class="hero-img" media="(min-width: 1024px)" srcset="images/man2048.jpg">
+								<source class="hero-img" media="(min-width: 720px)" srcset="images/man1024.jpg">
+								<source class="hero-img" media="(min-width: 600px)" srcset="images/man768.jpg">
+								<source class="hero-img" media="(min-width: 321px)" srcset="images/man640.jpg">
+								<img class="hero-img hero-img-sm" src="images/man320.jpg" alt="Man wearing yellow jacket">	
+						</picture>
+						<div class="text">Caption Text</div>
+					</div>
+			
+					<div class="mySlides">
+						<div class="numberText">2 / 5</div>
+						<img src="images/mr-porter_large.jpg" >
+						<div class="text">Mr Porter</div>
+					</div>
+			
+					<div class="mySlides">
+						<div class="numberText">3 / 5</div>
+						<img src="images/net-a-porter_large.jpg">
+						<div class="text">Net A Porter</div>
+					</div>
+
+					<div class="mySlides">
+						<div class="numberText">4 / 5</div>
+						<img src="images/porter_medium.jpg">
+						<div class="text">Porter Fashion Magazine</div>
+					</div>
+
+					<div class="mySlides">
+						<div class="numberText">5 / 5</div>
+						<img src="images/theoutnet_large.png">
+						<div class="text">The Outnet</div>
+					</div>
+			
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			
+			</div>
+
+				<br>
+
+			<div class="dots">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+				<span class="dot" onclick="currentSlide(4)"></span>
+				<span class="dot" onclick="currentSlide(5)"></span>
+			</div>
+			
+
+
+			<section class="intro mlr">
+				<h2 class="mt">Intro</h2>
+				<p>
+					YOOX NET-A-PORTER GROUP is the <span>world’s leading online luxury fashion retailer</span>. The Group is a Global company with Anglo-Italian roots, the result of a game-changing merger, which in October 2015 brought together YOOX GROUP and THE NET-A-PORTER GROUP, two companies that have <span>revolutionized the luxury fashion industry</span> since their birth in 2000.
+				</p>
+			</section>
+
+			<section class="news">
+				<ul class="Article">
+					<li class="linkArticle active"  id="linkTo10"><a href="#" >1</a></li>
+					<li class="linkArticle" id="linkTo9"><a  href="#">2</a></li>
+					<li class="linkArticle" id="linkTo8"><a  href="#" >3</a></li>
+					<li class="linkArticle" id="linkTo8"><a href="#" >4</a></li>
+					<li class="linkArticle" id="linkTo8"><a  href="#" >5</a></li>
+				</ul>
+				<article class="article-container">
+					
+				</article>
+				<!--<h2>sunt aut facere repellat provident occaecati excepturi optio reprehenderit</h2>
+				<div class="article-container">
+					<div>
+						<article>
+							<h2>Article</h2>
+							Quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto. 
+						</article>				
+						<article>
+							<h2>Article</h2>
+							Quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto. 
+						</article>				
+						<article>
+							<h2>Article</h2>
+							Quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto. 
+						</article>				
+					</div>
+					<div>
+						<article>
+							<h2>Article</h2>
+							Quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto. 
+						</article>				
+						<article>
+							<h2>Article</h2>
+							Quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto. 
+						</article>
+					</div>
+				</div>-->
+			</section>
+
+			<form action="GET" class="mlr mt">
+				<label for="newsteller">Newsteller</label>
+				<div class="mt">
+					<input type="email" id="newsteller" placeholder="work@ynap.com">
+					<input type="submit" value="Subscribe" id="input-two">
+				</div>
+			</form>
+
+		<footer>
+			<a href="#" id="copyright">COPYRIGHT &copy;</a> 2000-2017 YOOX NET-A-PORTER GROUP
+		</footer>
+
+	</div>
+
+
+	<!-- JAVASCRIPT -->
+	<script src="js/script.js"></script>
+</body>
+</html>
